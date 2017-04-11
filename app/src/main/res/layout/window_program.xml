@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_base_background"
+    android:padding="10dp"
+    android:id="@+id/main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/color_text_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/program_parameters_name"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/program_parameters_name_n"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:textCursorDrawable="@drawable/edit_cursor_shape"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/color_text_blank"
+                    android:hint="节目1"
+                    android:textColorHint="@color/color_text_blank2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardAddressSet"
+                    />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/scan3layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scanimg4"
+               >
+                <CheckBox
+                    android:background="@color/color_base_background1"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/window_pro_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/program_parameters_timer"
+                    android:checked="false" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                   android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/window_pro_content">
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_weight="1.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_start"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:layout_weight="1.0"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_text_blank"
+                        android:hint="00:00:00"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_end"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:layout_weight="1.0"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_text_blank"
+                        android:hint="23:59:59"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/program_parameters_looping"
+                    android:layout_gravity="center_horizontal" />
+                <LinearLayout
+                    android:background="@color/color_base_background1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+             <RadioGroup
+                 android:id="@+id/window_rg1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 >
+
+                 <RadioButton
+                     android:id="@+id/window_rg2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:checked="true"
+                     android:text="@string/program_parameters_day"
+                     android:textColor="#000000"
+                     android:textSize="14sp" />
+
+
+                     <RadioButton
+                         android:id="@+id/window_rg3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/program_parameters_date"
+                         android:textColor="#000000"
+                         android:textSize="14sp" />
+
+
+                 <RadioButton
+                     android:id="@+id/window_rg4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/program_parameters_week"
+                     android:textColor="#000000"
+                     android:textSize="14sp"
+                     android:checked="false" />
+             </RadioGroup>
+
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                            <EditText
+
+                                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                                android:textSize="14sp"
+                                android:textColor="@color/color_text_blank"
+                                android:hint="20130101"
+                                android:textColorHint="@color/color_text_blank2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dip"
+                                android:layout_toRightOf="@+id/textView4"
+
+                                android:background="@drawable/edit_shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_text_blank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/program_parameters_to"
+
+                                android:layout_gravity="center_horizontal" />
+                            <EditText
+
+                                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                                android:textSize="14sp"
+                                android:textColor="@color/color_text_blank"
+                                android:hint="20130102"
+                                android:textColorHint="@color/color_text_blank2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dip"
+                                android:layout_toRightOf="@+id/textView4"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/edit_shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/color_base_background1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="7.0">
+                    <CheckBox
+                        android:layout_marginLeft="60dp"
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Monday"
+                        android:checked="false" />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Tuesday" />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Wednesday" />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Thursday"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Friday"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Saturday"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_cb7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_Sunday"
+                        />
+                </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/color_text_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/program_parameters_playmode"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scimage2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/color_base_background1"
+                >
+
+
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/hardware_bt"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+
+                        android:id="@+id/hardware_bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/program_parameters_playorder"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:layout_marginLeft="10dip"
+                        android:id="@+id/hardware_bt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_playtime"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:checked="false" />
+                    <EditText
+                        android:gravity="center_horizontal"
+                        android:phoneNumber="true"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:hint="60"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/program_parameters_s"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

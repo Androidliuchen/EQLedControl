@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_base_background">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_top_background" >
+
+
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/screen_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/button_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/screenparameters_setting"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:background="@color/color_base_background1"
+        android:id="@+id/main_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="9.0"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:id="@+id/led_setting">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/color_top_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/led_setting"
+                android:id="@+id/scr_text0" />
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="2dp"
+                 android:background="@color/color_top_background"
+                 android:id="@+id/scr_la0"
+                 android:orientation="horizontal">
+
+             </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/hardware_setting">
+
+
+
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/color_text_blank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hardware_setting"
+                android:id="@+id/scr_text1" />
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_top_background"
+                android:id="@+id/scr_la1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/scan_setting">
+
+
+
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/color_text_blank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_setting"
+                android:id="@+id/scr_text2" />
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_top_background"
+                android:id="@+id/scr_la2"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.eqled.custom.ViewPagerCompat
+        android:id="@+id/Screenparameters_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.eqled.custom.ViewPagerCompat>
+
+</LinearLayout>

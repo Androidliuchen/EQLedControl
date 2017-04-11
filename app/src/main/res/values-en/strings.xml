@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EQManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="searchwiif">search wiif</string>
+	<string name="programlist">program list</string>
+	<string name="addprogram">add program</string>
+	<string name="screenset">set screen</string>
+	<string name="language">language</string>
+	<string name="about">about</string>
+	<string name="exit">exit</string>
+	<string name="url_server">http://192.168.191.1:8080/InstallJson/app-debug.apk</string>
+	<string name="setting_wifi">wifi setting</string>
+	<string name="alert_hint">alert hint</string>
+	<string name="main_program">program</string>
+	<string name="main_control">control</string>
+	<string name="main_setting">setting</string>
+	<string name="control_wifi">search wifi</string>
+	<string name="control_isopen">screen switch</string>
+	<string name="control_setbrightness">set brightness</string>
+	<string name="control_timecollatin">time corretion</string>
+	<string name="setting_screenparameters">screen parameters</string>
+	<string name="setting_init">reset</string>
+	<string name="setting_language">language</string>
+	<string name="setting_about">about</string>
+	<string name="setting_exit">exit</string>
+	<string name="screenparameters_setting">parameters setting</string>
+	<string name="led_setting">screen</string>
+	<string name="hardware_setting">hardware</string>
+	<string name="scan_setting">scan</string>
+	<!--  MainActivity,提示用户点击退出   !-->
+	<string name="hint_exit">press back again to exit</string>
+	<!--  newworkActivity   !-->
+	<string name="hint_connection_to">connecting:</string>
+	<string name="hint_start_wifi">turn on WiFi-enabled...</string>
+	<string name="hint_connection_wifi">connecting WiFi...</string>
+	<string name="hint_control_wifi_failure">Can not find WiFi</string>
+	<string name="hint_connection_success">Connect successfully</string>
+	<string name="hint_connection_failure">connect failed</string>
+	<string name="hint_no_connection">No connection</string>
+	<string name="hint_no_preview">nonsupport</string>
+	<string name="network_name">WiFi connection</string>
+	<string name="network_start_wifi">WLAN</string>
+	<string name="network_no_connection">Not connected to WiFi</string>
+	<string name="network_search_wifi">Find wifi</string>
+	<!--  programActivity   !-->
+	<string name="program_parameters">Program</string>
+	<string name="program_area_add">Click to add content</string>
+	<string name="program_text">Text</string>
+	<string name="program_image">Image</string>
+	<string name="program_time">Time</string>
+	<string name="program_send_success">send successful</string>
+	<string name="program_send_failure">unsuccessful</string>
+	<string name="program_sending">Program Sending ...</string>
+	<string name="program_edit">Edit content</string>
+	<string name="program_delete_hint">Whether to delete?</string>
+	<string name="program_delete_ok">ok</string>
+	<string name="program_delete_cancle">cancel</string>
+	<!--  controlFragment   !-->
+	<string name="control_open">Open screen</string>
+	<string name="control_close">Close screen</string>
+	<string name="control_open_screen">Open screen</string>
+	<string name="control_close_screen">Close screen</string>
+	<string name="control_send_brightness">Brightness:</string>
+	<string name="control_load_data">Read Back</string>
+	<string name="control_time_change">Time correction</string>
+	<!--  hardwareFragment   !-->
+	<string name="hardware_send">sending</string>
+	<string name="hardware_cardAddress_hint">Illegal parameter</string>
+	<string name="hardware_port_hint">Illegal parameter</string>
+	<string name="hardware_ip_hint">Illegal parameter</string>
+	<string name="hardware_subnet_hint">Illegal parameter</string>
+	<string name="hardware_gateway_hint">Illegal parameter</string>
+	<string name="hardware_name">Serial parameter</string>
+	<string name="hardware_cardAddress">Card Address:</string>
+	<string name="hardware_baudrate">Baudrate</string>
+	<string name="hardware_network_parameters">Network Parameter</string>
+	<string name="hardware_ip">IP Address:</string>
+	<string name="hardware_port">port:</string>
+	<string name="hardware_subnet">Subnet Mask:</string>
+	<string name="hardware_gateway">Gateway:</string>
+	<string name="hardware_send_button">Load</string>
+
+	<!--  programFragment   !-->
+	<string name="program">program </string>
+	<string name="program_edit_name">Program editing</string>
+	<string name="program_send_program">loading</string>
+
+	<!--  scanFragment  暂时屏蔽  !-->
+	<string name="scan_3.75">Indoor 3.75</string>
+	<string name="scan_P10">Outdoor P10</string>
+	<string name="scan_scaning_mode">Common scanning mode:</string>
+	<string name="scan_name">Quick setup</string>
+	<string name="scan_loading_parameter">Loading parameters</string>
+	<!--   setting fragment  !-->
+	<string name="setting_language_cn">Chinese</string>
+	<string name="setting_language_en">English</string>
+	<string name="setting_language_select">Please select a language</string>
+	<string name="setting_cancel">cancel</string>
+	<!--    setting fragment  !-->
+	<string name="program_content_cn">没有数据,等待编辑</string>
+	<!--  preview.xml  !-->
+	<string name="preview_name">Preview</string>
+	<string name="preview_stop">Stop</string>
+	<!--  brightness-dialog.xml !-->
+	<string name="brightness_name">Manual adjustment</string>
+	<string name="brightness_dark">Dark(0)</string>
+	<string name="brightness_bright">Bright(15)</string>
+	<string name="brightness_setting">Setup</string>
+	<string name="brightness_readback">Read Back</string>
+	<!--  led.xml !-->
+	<string name="led_width">Lateral:</string>
+	<string name="led_height">Longitudinal:</string>
+	<string name="led_color">Color:</string>
+	<string name="led_color_bicolor">Bicolor</string>
+	<string name="led_color_monocolor">Monocolor</string>
+	<string name="led_data">Data:</string>
+	<string name="led_data_normal">Normal</string>
+	<string name="led_data_reverse">reverse</string>
+	<string name="led_row_order">Row Order:</string>
+	<string name="led_row_normal">Normal</string>
+	<string name="led_send">Loading parameter</string>
+	<!--  mdialog.xml wifi密码输入界面!-->
+	<string name="wifi_password">password</string>
+	<string name="wifi_connection">Connect</string>
+	<string name="wifi_close">Cancel</string>
+	<!--  popu_program.xml !-->
+	<string name="popu_program_send">Loading</string>
+	<string name="popu_program_preview">Preview</string>
+	<string name="popu_program_edit">Edit</string>
+	<string name="popu_program_delete">Delete</string>
+	<!--  window text.xml   文本窗参数界面-->
+	<string name="text_parameters_name">Text parameter</string>
+	<string name="text_parameters_w">Width:</string>
+	<string name="text_parameters_h">Height:</string>
+	<string name="text_parameters_x">Start X:</string>
+	<string name="text_parameters_y">Start Y:</string>
+	<string name="text_parameters_index">Position:</string>
+	<string name="text_parameters_center">VCenter</string>
+	<string name="text_parameters_content">Content:</string>
+	<string name="text_parameters_typepace">Typeface:</string>
+	<string name="text_parameters_textsize">Font size:</string>
+	<string name="text_parameters_bold">Bold:</string>
+	<string name="text_parameters_no">no</string>
+	<string name="text_parameters_yes">yes</string>
+	<string name="text_entry_stunt">Entry Stunt：</string>
+	<string name="text_clear_stunt">Clear Stunt：</string>
+	<string name="text_speed">Speed：</string>
+	<string name="text_hold_time">Hold Time：</string>
+	<string name="text_time_s">0.1s</string>
+	<!--  window program.xml   文本窗参数界面-->
+	<string name="program_parameters_name">Program parameter</string>
+	<string name="program_parameters_name_n">name:</string>
+	<string name="program_parameters_timer">Fixed Time</string>
+	<string name="program_parameters_start">Start:</string>
+	<string name="program_parameters_end">End:</string>
+	<string name="program_parameters_looping">Repeat mode</string>
+	<string name="program_parameters_day">Everyday</string>
+	<string name="program_parameters_date">Date：</string>
+	<string name="program_parameters_week">Weekly：</string>
+	<string name="program_parameters_to">To</string>
+	<string name="program_parameters_Monday">Mon.</string>
+	<string name="program_parameters_Tuesday">Tues</string>
+	<string name="program_parameters_Wednesday">Wed</string>
+	<string name="program_parameters_Thursday">Thu.</string>
+	<string name="program_parameters_Friday">Fri.</string>
+	<string name="program_parameters_Saturday">Sat.</string>
+	<string name="program_parameters_Sunday">Sun.</string>
+	<string name="program_parameters_playmode">Play mode</string>
+	<string name="program_parameters_playtime">Limited time</string>
+	<string name="program_parameters_playorder">In sequence</string>
+	<string name="program_parameters_s">s</string>
+</resources>

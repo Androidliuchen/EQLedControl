@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/color_base_background">
+    <com.eqled.custom.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/color_text_blank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时间窗"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10.0">
+                <LinearLayout
+                    android:layout_weight="5.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0"
+                    >
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_parameters_w"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:digits="1234567890"
+                        android:layout_weight="3.0"
+                        android:gravity="center_horizontal"
+                        android:phoneNumber="true"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_w"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="5.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_parameters_h"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:layout_weight="3.0"
+                        android:digits="1234567890"
+                        android:gravity="center_horizontal"
+                        android:phoneNumber="true"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_h"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10.0">
+                <LinearLayout
+                    android:layout_weight="5.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0"
+                    >
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_parameters_x"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:digits="1234567890"
+                        android:layout_weight="3.0"
+                        android:gravity="center_horizontal"
+                        android:phoneNumber="true"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_x"
+                        />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="5.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_parameters_y"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:layout_weight="3.0"
+                        android:digits="1234567890"
+                        android:gravity="center_horizontal"
+                        android:phoneNumber="true"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_y"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10">
+
+                <TextView
+                    android:layout_weight="2"
+
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="时钟风格:"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal" />
+
+                <Spinner
+                    android:layout_weight="8"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/window_time_style"
+                    />
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_base_background1"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10.0">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="固定文字:"
+
+                        android:layout_gravity="center_horizontal" />
+                    <EditText
+                        android:layout_weight="6"
+                        android:id="@+id/window_time_fixedtext"
+                        android:textCursorDrawable="@drawable/edit_cursor_shape"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_blank"
+                        android:textColorHint="@color/color_text_blank2"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/edit_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="字体:"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Spinner
+                        android:layout_weight="8"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_typeface"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="颜色:"
+                        android:id="@+id/tex"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_textcolor"
+                        />
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="大小:"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_textsize"
+                        />
+
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/window_time_numberclock"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_base_background1">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="年"
+                        android:checked="true"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                         android:id="@+id/window_time_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="月"
+                        android:checked="true"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_day"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="日"
+                        android:checked="true"
+                        />
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_datecolor"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <CheckBox
+                        android:layout_weight="3"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="星期"
+                        android:id="@+id/window_time_week"
+                        android:checked="true"
+                        />
+
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_weekcolor"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="时"
+                        android:checked="true"/>
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_minute"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:checked="true"/>
+                    <CheckBox
+                        android:layout_weight="1.0"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                           android:id="@+id/window_time_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="秒"
+                        android:checked="true"/>
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_timecolor"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scimage2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="10">
+
+                    <TextView
+                        android:layout_weight="2.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="年格式:"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                    <RadioGroup
+                        android:layout_weight="7.5"
+                        android:id="@+id/window_time_yearformat"
+                        android:layout_width="0dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:weightSum="2.0">
+
+                        <RadioButton
+                            android:layout_weight="1.0"
+                            android:id="@+id/window_time_fouryear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:checked="true"
+                            android:text="4位年"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:layout_weight="1.0"
+                            android:id="@+id/window_time_twoyear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="2位年"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scimage2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    >
+
+                    <TextView
+                        android:layout_weight="2.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="行格式:"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+
+                        />
+
+                    <RadioGroup
+                        android:layout_weight="7.5"
+                        android:id="@+id/window_time_lineformat"
+                        android:layout_width="0dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:weightSum="2.0">
+
+                        <RadioButton
+                            android:layout_weight="1.0"
+                            android:id="@+id/window_time_oneline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:checked="true"
+                            android:text="单行"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:layout_weight="1.0"
+                            android:id="@+id/window_time_nline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="多行"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/window_time_analogclock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="时钟形状:"
+                        android:id="@+id/dfgx"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_shape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/window_time_shape"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.5"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_wkshow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="星期"
+                        android:checked="true"
+                        />
+                    <CheckBox
+                        android:layout_weight="1.5"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_text_blank"
+                        android:id="@+id/window_time_dashow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="日期"
+                        android:checked="true"
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="时标:"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_shibiaocolor"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="X:"
+
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:digits="1234567890"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:phoneNumber="true"
+                            android:textCursorDrawable="@drawable/edit_cursor_shape"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/color_text_blank"
+                            android:textColorHint="@color/color_text_blank2"
+                            android:background="@drawable/edit_shape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/window_time_shibiaox"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Y:"
+                            android:gravity="right"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:digits="1234567890"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:phoneNumber="true"
+                            android:textCursorDrawable="@drawable/edit_cursor_shape"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/color_text_blank"
+                            android:textColorHint="@color/color_text_blank2"
+                            android:background="@drawable/edit_shape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:id="@+id/window_time_shibiaoy"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="3"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="形状:"
+                            android:gravity="right"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_shibiaoshape"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="分标:"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_fenbiao"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="X:"
+
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:id="@+id/window_time_fenbiaox"
+                            android:digits="1234567890"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:phoneNumber="true"
+                            android:textCursorDrawable="@drawable/edit_cursor_shape"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/color_text_blank"
+                            android:textColorHint="@color/color_text_blank2"
+                            android:background="@drawable/edit_shape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Y:"
+                            android:gravity="right"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:id="@+id/window_time_fenbiaoy"
+                            android:digits="1234567890"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:phoneNumber="true"
+                            android:textCursorDrawable="@drawable/edit_cursor_shape"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/color_text_blank"
+                            android:textColorHint="@color/color_text_blank2"
+                            android:background="@drawable/edit_shape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="3"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="形状:"
+                            android:gravity="right"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_fenbiaoshape"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="时针:"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_shizhen"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="分针:"
+
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_fenzhen"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_text_blank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="秒针:"
+
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:id="@+id/window_time_miaozhen"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="时差:"
+                    android:id="@+id/ddtex"
+                    android:layout_gravity="center_horizontal" />
+
+                <Spinner
+                    android:layout_weight="2"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/window_time_offset"
+                    />
+                <EditText
+                    android:digits="1234567890"
+                    android:layout_weight="2"
+                    android:id="@+id/window_time_daylag"
+                    android:textCursorDrawable="@drawable/edit_cursor_shape"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/color_text_blank"
+                    android:textColorHint="@color/color_text_blank2"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/edit_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="天"
+                    android:id="@+id/ddtdddex"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_weight="3"
+                    android:id="@+id/window_time_timelag"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="00:00"
+                    android:textColor="@color/color_text_blank"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/edit_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.eqled.custom.CustomScrollView>
+
+</LinearLayout>

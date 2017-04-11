@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_base_background1"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+
+    >
+
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+            <TextView
+
+                android:textSize="18sp"
+                android:textColor="@color/color_text_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hardware_name"
+                android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+
+            <TextView
+                android:layout_weight="4"
+                android:textSize="15sp"
+                android:textColor="@color/color_text_blank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hardware_cardAddress"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_weight="6.0"
+                android:digits="1234567890."
+                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_text_blank"
+                android:hint="1"
+                android:textColorHint="@color/color_text_blank2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardAddressSet"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scimage2"
+            android:orientation="horizontal"
+            android:gravity="center"
+android:layout_weight="10"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hardware_baudrate"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                />
+
+            <RadioGroup
+                android:layout_weight="6"
+                android:id="@+id/hardware_bt"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                   android:id="@+id/hardware_bt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="57600"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/hardware_bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9600"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:checked="false" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+
+            android:textSize="18sp"
+            android:textColor="@color/color_text_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hardware_network_parameters"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scimage2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hardware_ip"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                />
+
+            <EditText
+                android:layout_weight="6"
+                android:digits="1234567890."
+                android:id="@+id/ipSet"
+                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_text_blank"
+                android:hint="192.168.1.236"
+                android:textColorHint="@color/color_text_blank2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scimage2"
+            android:orientation="horizontal"
+            android:gravity="center"
+         android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hardware_port"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                />
+
+            <EditText
+                android:layout_weight="6"
+                android:digits="1234567890."
+                android:id="@+id/portSet"
+                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_text_blank"
+                android:hint="5005"
+                android:textColorHint="@color/color_text_blank2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scimage2"
+            android:orientation="horizontal"
+            android:gravity="center"
+ android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hardware_subnet"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                />
+            <EditText
+                android:layout_weight="6"
+                android:digits="1234567890."
+                android:id="@+id/subnetSet"
+                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_text_blank"
+                android:hint="255.255.255.0"
+                android:textColorHint="@color/color_text_blank2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scimage2"
+            android:orientation="horizontal"
+            android:gravity="center"
+               android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hardware_gateway"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                />
+
+            <EditText
+                android:layout_weight="6"
+                android:digits="1234567890."
+                android:id="@+id/gatewaySet"
+                android:textCursorDrawable="@drawable/edit_cursor_shape"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_text_blank"
+                android:hint="192.168.1.1"
+                android:textColorHint="@color/color_text_blank2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_base_background1"></LinearLayout>
+        <Button
+            android:layout_marginTop="@dimen/hardw_send_height"
+            android:id="@+id/hardware_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hardware_send_button"
+            android:textSize="20sp"
+            android:background="@drawable/screen_button"
+            android:textColor="@color/color_base_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

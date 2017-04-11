@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    沉浸式状态栏
+    !-->
+    <color name="primary">#FF03A9F4</color>
+    <color name="primary_dark">#FF0288D1</color>
+    <color name="status_bar_color">@color/primary_dark</color>
+    <!--
+   沉浸式状态栏
+   !-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_base_background">#FFFFFF</color>
+    <color name="color_base_background1">#F2F2F2</color>
+    <color name="color_base_background2">#F6F6F6</color>
+    <color name="color_base_text">#FFFFFF</color>
+    <color name="color_text_blank">#000000</color>
+    <color name="color_text_blank1">#414141</color>
+    <color name="color_text_blank2">#6E6E6E</color>
+    <color name="color_text_blank3">#5A595B</color>
+    <color name="color_text_yellow">#FFFF00</color>
+    <color name="color_top_background">#03A9F4</color>
+    <color name="color_bottom_background">#0288d1</color>
+    <color name="color_edit_storke">#32CD32</color>
+</resources>

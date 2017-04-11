@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 屏参，扫描list的高度 -->
+    <dimen name="scan_list_height">170dp</dimen>
+    <!-- 屏参,硬件参数发送按钮距离顶部的高度 -->
+    <dimen name="hardw_send_height">40dp</dimen>
+    <!-- 节目添加界面，底部popuwindow距离底部的间距，用于虚拟按键适配 -->
+    <dimen name="program_control_margin">45dp</dimen>
+</resources>

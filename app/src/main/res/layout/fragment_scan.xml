@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color_base_background1"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+     android:layout_weight="10.0"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.0"
+        >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/scanRel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_shape"
+            >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shortcutNmae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/scan_name"
+                android:textSize="18sp"
+                android:textColor="@color/color_text_blank" />
+
+
+            <LinearLayout
+                android:layout_below="@+id/shortcutNmae"
+                android:id="@+id/scanimg1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_base_background1"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scan1layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scanimg1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/scanOftenName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginRight="5dip"
+                    android:text="@string/scan_scaning_mode" />
+                <Spinner
+                    android:background="@drawable/spinner_shape"
+                    android:id="@+id/scanOftenSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dip"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="invisible"
+            android:background="@drawable/dialog_shape"
+            android:id="@+id/scanRel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="5dip"
+
+            android:layout_below="@+id/scanRel1"
+            >
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/scan2layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="10.0"
+                android:orientation="horizontal"
+                >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                >
+                <TextView
+
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/scanWayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="扫描方式:" />
+                <Spinner
+                    android:gravity="center"
+                    android:background="@drawable/spinner_shape"
+                    android:id="@+id/scanWaySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                >
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/frequencyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="频率:" />
+                <Spinner
+                    android:gravity="center"
+                    android:background="@drawable/spinner_shape"
+                    android:id="@+id/frequencySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/scan2layout"
+                android:id="@+id/scanimg2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_base_background1"
+                android:orientation="horizontal"></LinearLayout>
+            <ListView
+                android:id="@+id/scanListView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/scan_list_height"
+                android:layout_below="@+id/scanimg2"
+                >
+            </ListView>
+            <ImageView
+                android:id="@+id/scanimg3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_below="@+id/scanListView"
+                android:background="#BDBDBD" />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/color_text_blank"
+                android:id="@+id/thisScanWayText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scanimg3"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                />
+            <ImageView
+                android:id="@+id/scanimg4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_below="@+id/thisScanWayText"
+                android:background="#BDBDBD" />
+            <LinearLayout
+                android:id="@+id/scan3layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/scanimg4"
+                android:gravity="center" >
+                <CheckBox
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/lineProtectCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="行保护" />
+                <CheckBox
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/constantChipCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="恒流源芯片" />
+
+                <CheckBox
+                    android:textSize="15sp"
+                    android:textColor="@color/color_text_blank"
+                    android:id="@+id/nullCompileYardCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="无译码" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/scan_send"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/screen_button"
+        android:text="@string/scan_loading_parameter"
+        android:textSize="20sp"
+        android:layout_below="@+id/scanRel2"
+        />
+
+</LinearLayout>

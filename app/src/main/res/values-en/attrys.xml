@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--  时钟样式 !-->
+	<string-array name="colck_style">
+		<item>2011-11-11 11:11:11</item>
+		<item>2011/11/11 11:11:11</item>
+		<item>2011-11-11 11:11:11</item>
+		<item>Simulate clock</item>
+	</string-array>
+
+	<string-array name="clock">
+		<item>"12"</item>
+		<item>"1"</item>
+		<item>"2"</item>
+		<item>"3"</item>
+		<item>"4"</item>
+		<item>"5"</item>
+		<item>"6"</item>
+		<item>"7"</item>
+		<item>"8"</item>
+		<item>"9"</item>
+		<item>"10"</item>
+		<item>"11"</item>
+	</string-array>
+
+    <!-- 常用扫描方式 -->
+    <string-array name="scanOftenArray">
+	    	<item>@string/scan_3.75</item>
+     		<item>@string/scan_P10</item>
+    </string-array>
+
+	<!-- 文本居中设置 -->
+	<string-array name="text_vcenter">
+		<item>Left aligned</item>
+		<item>HCenter</item>
+		<item>Right aligned</item>
+	</string-array>
+
+
+	<!-- 文本窗文字进场特效 -->
+	<string-array name="text_inmode_string">
+		<item>Random</item>
+		<item>move upward</item>
+		<item>move downward</item>
+		<item>move left</item>
+		<item>move right</item>
+		<item>Continuous left shift</item>
+		<item>display immediately</item>
+	</string-array>
+	<!-- 文本窗文字出场特效 -->
+	<string-array name="text_outmode_string">
+		<item>Not clear</item>
+		<item>move upward</item>
+		<item>move downward</item>
+		<item>move left</item>
+		<item>move right</item>
+	</string-array>
+
+
+
+</resources>
